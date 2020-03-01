@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TP.Controlls.showOwnController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0">
+         <top>
+            <Pane prefHeight="50.0" prefWidth="1000.0" style="-fx-background-color: #4C1141;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="145.0" fitWidth="239.0" layoutX="396.0" layoutY="-41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../externe/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <Pane prefHeight="50.0" prefWidth="1000.0" style="-fx-background-color: #4C1141;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="470.0" layoutY="8.0" text="Owners" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </bottom>
+         <left>
+            <Pane prefHeight="500.0" prefWidth="150.0" style="-fx-background-color: #4C1141;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="showEstBtn" mnemonicParsing="false" onAction="#ShowEst" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #4C1141;" text="Show estate" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="addEstBtn" layoutY="50.0" mnemonicParsing="false" onAction="#addEstate" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #4C1141;" text="Add estate" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="showOwnBtn" layoutY="150.0" mnemonicParsing="false" onAction="#showOwners" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #4C1141;" text="Show owners" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="fltEstBtn" layoutY="100.0" mnemonicParsing="false" onAction="#fltrEstate" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #4C1141;" text="Filter estate" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="chkMsgBtn" layoutY="200.0" mnemonicParsing="false" onAction="#chkMessages" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #4C1141;" text="Check messages" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logOutBtn" layoutY="450.0" mnemonicParsing="false" onAction="#logOut" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #4C1141;" text="Log out" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="NameLab" layoutX="172.0" layoutY="45.0" prefHeight="40.0" prefWidth="628.0" text="Name : ">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="firstNameLab" layoutX="172.0" layoutY="85.0" prefHeight="40.0" prefWidth="623.0" text="First name : ">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="phoneLab" layoutX="172.0" layoutY="125.0" prefHeight="40.0" prefWidth="590.0" text="Phone :">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="emailLab" layoutX="172.0" layoutY="165.0" prefHeight="40.0" prefWidth="577.0" text="Email :  ">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="adrsLab" layoutX="172.0" layoutY="205.0" prefHeight="40.0" prefWidth="573.0" text="Adress : ">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="estNbrLab" layoutX="172.0" layoutY="245.0" prefHeight="40.0" prefWidth="573.0" text="Estate number : ">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="nextBtn" layoutX="650.0" layoutY="425.0" mnemonicParsing="false" onAction="#Next" prefHeight="48.0" prefWidth="142.0" style="-fx-background-color: #4C1141;" text="Next" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ownEstBtn" layoutX="269.0" layoutY="425.0" mnemonicParsing="false" onAction="#showOwnEst" prefHeight="48.0" prefWidth="186.0" style="-fx-background-color: #4C1141;" text="Owners Estate" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </left>
+      </BorderPane>
+   </children>
+</Pane>
